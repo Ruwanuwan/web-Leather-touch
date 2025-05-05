@@ -78,13 +78,13 @@
                                         
                                         
                                         <button class="common_btn" type="submit">login</button>
-                                        <p class="social_text">Sign in with social account</p>
+                                        {{-- <p class="social_text">Sign in with social account</p>
                                         <ul class="wsus__login_link">
                                             <li><a href="#"><i class="fab fa-google"></i></a></li>
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
+                                        </ul> --}}
                                     </form>
                                 </div>
                             </div>
@@ -115,10 +115,10 @@
                                         </div>
                                         
                                         <button class="common_btn mt-4"  type="submit">signup</button>
-                                        <a href="{{ route('auth.google') }}" class="btn btn-google-alt mt-4 d-flex align-items-center justify-content-center gap-2">
+                                        {{-- <a href="{{ route('auth.google') }}" class="btn btn-google-alt mt-4 d-flex align-items-center justify-content-center gap-2">
                                             <img src="{{ asset('frontend/images/g-logo.png') }}" alt="Google Logo" class="google-logo">
                                             <span class="text">Login with Google</span>
-                                        </a>
+                                        </a> --}}
                                         
                                         
                                     </form>

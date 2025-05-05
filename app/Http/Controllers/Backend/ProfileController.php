@@ -48,7 +48,7 @@ class ProfileController extends Controller
         toastr()->success('Profile Updated Successfully');
         return redirect()->back()->with('success', 'Profile updated successfully!');
     }
-/** Update */
+/** Update password*/
     public function updatePassword(Request $request)
     {
         $request->validate([

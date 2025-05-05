@@ -48,11 +48,11 @@
                 {{ __('Register') }}
             </x-primary-button>
 
-            <x-primary-button class="btn btn-google">
+            {{-- <x-primary-button class="btn btn-google">
             <a href="{{ route('auth.google') }}" >
                 <i class="fab fa-google"></i> Login with Google
             </a>
-            </x-primary-button>
+            </x-primary-button> --}}
         </div>
     </form>
 </x-guest-layout>

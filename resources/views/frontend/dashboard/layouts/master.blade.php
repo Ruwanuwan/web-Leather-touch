@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="{{asset('frontend/css/jquery.classycountdown.css')}}">
   <link rel="stylesheet" href="{{asset('frontend/css/venobox.min.css')}}">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
   <link rel="stylesheet" href="{{asset('frontend/css/responsive.css')}}">
   <!-- <link rel="stylesheet" href="css/rtl.css"> -->
@@ -75,7 +76,7 @@
   <!--slick slider js-->
   <script src="{{asset('frontend/js/slick.min.js')}}"></script>
   <!--simplyCountdown js-->
-  <script src="j{{asset('frontend/s/simplyCountdown.js')}}"></script>
+  <script src="j{{asset('frontend/js/simplyCountdown.js')}}"></script>
   <!--product zoomer js-->
   <script src="{{asset('frontend/js/jquery.exzoom.js')}}"></script>
   <!--nice-number js-->
@@ -98,9 +99,22 @@
   <script src="{{asset('frontend/js/venobox.min.js')}}"></script>
   <!--classycountdown js-->
   <script src="{{asset('frontend/js/jquery.classycountdown.js')}}"></script>
+   <!-- Toastr Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
   <!--main/custom js-->
   <script src="{{asset('frontend/js/main.js')}}"></script>
+  <!--show dynemic validation errors-->
+  <script>
+    @if ($errors->any())
+            @foreach ($errors->all() as $error)
+             toastr.error("{{$error}}")
+            @endforeach
+            @endif
+    
+  </script>
 </body>
 
 </html>
