@@ -150,9 +150,11 @@
     <!--============================
         BANNER PART 2 START
     ==============================-->
-        @include('frontend.home.sections.banner-slider')
+    @include('frontend.home.sections.banner-slider')
     <!--============================
         BANNER PART 2 END
+
+
     ==============================-->
 
 
@@ -253,6 +255,6 @@
     <!--============================
         HOME BLOGS END
     ==============================-->
-
+     
 
 @endsection

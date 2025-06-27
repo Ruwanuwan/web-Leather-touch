@@ -12,6 +12,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
+
 class SliderDataTable extends DataTable
 {
     /**
@@ -33,7 +34,7 @@ class SliderDataTable extends DataTable
             })
             ->addColumn('status', function($query){
                 $active = '<i class="badge badge-success">Active</i>';
-                $inActive = '<i class="badge badge-">Inactive</i>';
+                $inActive = '<i class="badge badge-danger">Inactive</i>';
                 if($query->status == 1){
                     return $active;
                 }else{

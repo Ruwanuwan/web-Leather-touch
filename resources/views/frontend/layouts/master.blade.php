@@ -124,7 +124,7 @@
     <!--slick slider js-->
     <script src="{{asset('frontend/js/slick.min.js')}}"></script>
     <!--simplyCountdown js-->
-    <script src="{{asset('frontend/js/simplyCountdown.j')}}s"></script>
+    <script src="{{asset('frontend/js/simplyCountdown.js')}}"></script>
     <!--product zoomer js-->
     <script src="{{asset('frontend/js/jquery.exzoom.js')}}"></script>
     <!--nice-number js-->
@@ -145,17 +145,19 @@
     <script src="{{asset('frontend/js/isotope.pkgd.min.js')}}"></script>
     <!--venobox js-->
     <script src="{{asset('frontend/js/venobox.min.js')}}"></script>
+     <!--classycountdown js-->
+    <script src="{{asset('frontend/js/jquery.classycountdown.js')}}"></script>
     <!--Toaster js-->
     <script src="{{asset('frontend/js/toastr.min.js')}}"></script>
-    <!--classycountdown js-->
-    <script src="{{asset('frontend/js/jquery.classycountdown.js')}}"></script>
+   
 
-    <!--main/custom js-->
-    <script src="{{asset('frontend/js/main.js')}}"></script>
+    
     <!--toaster js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --}}
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <!--main/custom js-->
+    <script src="{{asset('frontend/js/main.js')}}"></script>
   <script>
     @if ($errors->any())
             @foreach ($errors->all() as $error)

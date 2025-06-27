@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="{{asset('backend/assets/css/bootstrap-iconpicker.min.css')}}">
+  <link rel="stylesheet" href="{{asset('backendassets/modules/bootstrap-daterangepicker/daterangepicker.css')}}">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{asset('backend/assets/css/style.css')}}">
@@ -60,6 +62,7 @@
   </div>
 
   <!-- General JS Scripts -->
+  
   <script src="{{asset('backend/assets/modules/jquery.min.js')}}"></script>
   <script src="{{asset('backend/assets/modules/popper.js')}}"></script>
   <script src="{{asset('backend/assets/modules/tooltip.js')}}"></script>
@@ -85,11 +88,13 @@
   <script src="{{asset('backend/assets/js/scripts.js')}}"></script>
   <script src="{{asset('backend/assets/js/custom.js')}}"></script>
   <!-- Toastr Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="{{asset('backend/assets/js/bootstrap-iconpicker.bundle.min.js')}}"></script>
+   <script src="{{asset('backend/assets/modules/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
  
   <script>
     @if ($errors->any())
@@ -136,14 +141,16 @@
                         if(data.status == 'success'){      
                         Swal.fire(
                               'Deleted!',
-                              data.message
+                              data.message,
+                              'success'
                         ) 
 
                         window.location.reload();
                         }else if(data.status == 'error'){
                           Swal.fire(
-                              'Cant Delete',
-                              data.message
+                              'Can\'t Delete',
+                              data.message,
+                              'error'
                         )
                         }
                       },
